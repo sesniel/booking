@@ -1,0 +1,114 @@
+#wb-about {
+	text-align: left;
+
+	.item {  
+		@media ( max-width: $breakpoint-small ) {
+			padding-bottom: 14px;
+			margin-bottom: 21px;
+			width: 48%;
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+
+	.title {
+		font-size: 16px;
+		font-family: $font-family-slab;
+		font-weight: bold;
+		margin-bottom: 10px;
+		color: $brand-ivory2;
+		text-transform: uppercase;
+		color: $brand-dustypink;
+
+		@media ( max-width: $breakpoint-small ) {
+			font-size: 15.4px;
+		}
+	}
+
+	.details {
+		color: #f3f3f3;
+		font-weight: 300;
+	}
+
+	ul > li {
+		text-transform: capitalize;
+	}
+
+	ul > li > a {
+		display: block;
+		padding: 4px 0px;
+		color: #fff;
+		font-size: 14px;
+		font-weight: 300;
+
+		@media ( max-width: $breakpoint-small ) {
+			font-size: 12.5px;
+			padding: 3px 0px;
+		}
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.site-footer {
+	font-size: 14px;
+	color: $brand-ivory2;
+	font-weight: 300;
+	background-color: $brand-primary;
+	border-top: 1px solid $brand-warning;
+	padding: 30px 0;
+
+	a {
+		font-size: 14px;
+		color: $brand-ivory2;
+		font-weight: 300;
+	}
+
+	@media ( max-width: $breakpoint-small ) {  
+		text-align: center;
+
+		a {
+			font-size: 12px;
+		}
+
+		.item {
+			font-size: 12px;
+			text-align: center;
+		}
+	}
+
+	@media ( max-width: $breakpoint-mobile ) {
+		padding: 20px 0 30px;
+
+		.logo-footer {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.social {
+	background-color: $brand-primary;
+	font-size: 30px;
+	text-align: right;
+
+	a {
+		color: $brand-warning;
+		margin-left: 5px;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	@media ( max-width: $breakpoint-small ) {
+		text-align: left;
+		padding-bottom: 19px;
+		line-height: 1;
+
+		a:first-child {
+			margin-left: 16px;
+		}
+	}
+}
